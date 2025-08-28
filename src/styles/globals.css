@@ -1,0 +1,37 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2em !important;
+  }
+  
+  .form-card, .results {
+    padding: 20px !important;
+  }
+  
+  .form-row {
+    flex-direction: column !important;
+  }
+  
+  .biotipo-section {
+    grid-template-columns: 1fr !important;
+  }
+}
