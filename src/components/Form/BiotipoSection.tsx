@@ -19,6 +19,7 @@ const BiotipoSection: React.FC<BiotipoSectionProps> = ({ formData, updateFormDat
           className={`biotipo-card ${formData.biotipo === 'ectomorfo' ? 'selected' : ''}`}
           onClick={() => handleBiotipoSelect('ectomorfo')}
         >
+          <img src="/ectomorfo.png" alt="Ectomorfo" style={{ width: '120px', marginBottom: '8px' }} />
           <h4>Ectomorfo</h4>
           <p>Dificuldade em ganhar peso/massa</p>
         </div>
@@ -26,6 +27,7 @@ const BiotipoSection: React.FC<BiotipoSectionProps> = ({ formData, updateFormDat
           className={`biotipo-card ${formData.biotipo === 'mesomorfo' ? 'selected' : ''}`}
           onClick={() => handleBiotipoSelect('mesomorfo')}
         >
+          <img src="/mesomorfo.png" alt="Mesomorfo" style={{ width: '120px', marginBottom: '8px' }} />
           <h4>Mesomorfo</h4>
           <p>Ganha músculo e gordura com facilidade</p>
         </div>
@@ -33,6 +35,7 @@ const BiotipoSection: React.FC<BiotipoSectionProps> = ({ formData, updateFormDat
           className={`biotipo-card ${formData.biotipo === 'endomorfo' ? 'selected' : ''}`}
           onClick={() => handleBiotipoSelect('endomorfo')}
         >
+          <img src="/endomorfo.png" alt="Endomorfo" style={{ width: '120px', marginBottom: '8px' }} />
           <h4>Endomorfo</h4>
           <p>Facilidade em ganhar gordura</p>
         </div>
