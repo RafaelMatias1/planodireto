@@ -5,6 +5,7 @@ import PlanForm from './components/Form';
 import Results from './components/Results';
 import { FormData, NutritionPlan } from './types/form';
 import { generateNutritionPlan } from './utils/calculations';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import './styles/globals.css';
 
 const App: React.FC = () => {
@@ -40,6 +41,7 @@ const App: React.FC = () => {
 
   return (
     <Layout>
+      <SpeedInsights />
       <Header />
       {isGenerating ? (
         <div style={{
